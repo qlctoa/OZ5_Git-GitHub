@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <!-- 폼 태그 -->
+    <!-- GET -->
+    <form action="https://www.google.com" method="" autofocus autocomplete> <!-- form : 폼 태그 // action : 폼 데이터가 전송될 서버의 URL // method : 폼 데이터가 전송될 때 사용될 HTTP 메서드 // autofocus : 페이지 로딩 시 자동으로 포커스 -->
+    <!-- action : 폼 데이터가 전송될 서버의 URL -->
+    <!-- method : 폼 데이터가 전송될 때 사용될 HTTP 메서드 / 작성안하면 GET으로 호출해서 쿼리파라미터로 전달 -->
+    <!-- autofocus : 페이지 로딩 시 자동으로 포커스 -->
+    <!-- autocomplete : 자동 완성 / = off : 자동완성 끄기 -->
+
+        <!-- input 태그 -->
+        <input type="search" placeholder="검색어를 입력하세요"> <!-- input : 입력 태그 // type : 입력 타입 // name : 이름 // placeholder : 안내 문구 -->
+        <!-- placeholder : 입력 필드에 대한 힌트 텍스트 -->
+        
+        <!-- input에 입력한 데이터를 전송 -->
+        <button>검색</button>
+    </form>
+    
+    <hr>
+    <!-- POST -->
+    <form action="https://httpbin.org/post" method="POST">
+    <input type="email" placeholder="이메일을 입력하세요" name="email"> <!-- email : 이메일 입력 태그 -->
+    <input type="password" placeholder="비밀번호를 입력하세요" name="password"> <!-- password : 비밀번호 입력 태그 -->
+    <button type="submit">가입하기 </button> <!-- submit : 폼 데이터를 전송하는 버튼 -->
+    </form>
+    
+
+</body>
+</html>

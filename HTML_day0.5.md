@@ -11,12 +11,14 @@ HTML; HyperText Markup Language
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MY PAGE</title>
+        <title>MY PAGE</title> -> 페이지 이름
     </head>
-    <body>
+    <body> -> 내용
         hello
-    </body>
+    </body> 
 </html>
 ```
-
+예제파일 : html_day0.5.html
 ---
+
+주석 cmd+/
