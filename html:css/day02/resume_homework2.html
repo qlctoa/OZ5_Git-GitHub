@@ -1,69 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Park Bit Saem Portfolio</title>
     <link rel="stylesheet" href="style_homework.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <h1> 
-        [Self Introduction]</h1>
+    <main class="resume" id="resume">
+        <section class="profile-section">
+            <div>
+                <h1>Park Bit Saem</h1>
 
-    <hr>
-    <div>
-    <img id="profile" src="/html:css/day01/IMG_5225.jpeg" alt="박빛샘" width="200px" height="260px">
-    <header id="name">박빛샘</header> 
-    <p>안녕하세요, 저는 개발 공부 중인 박빛샘입니다.</p>
-    <a href="https://github.com/qlctoa.com" target="_blank">GitHub 바로가기</a>
+                <div class="contact">
+                    <a href="mailto:qlctoa67@naver.com">
+                        <i class="fa-solid fa-at"></i>
+                        qlctoa67@naver.com
+                    </a>
 
-    <ul>
-        <li>생년월일 : 2001. 09. 23</li>
-        <li>주소 : 인천광역시 미추홀구</li>
-        <li>이메일 : qlctoa67@naver.com</li>
-    </ul><hr>
-    <hobby>Hobby & preference</hobby>
-    <ul type="square">
-        <li>취미 : 수영, 요리</li>
-        <li>좋아하는 음식 : 된장찌개</li>
-        <li>좋아하는 색 : 보라색</li>
-        </ul><hr>
-    
-    <h1>Career & Experience</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>회사명</th>
-                <th>기간</th>
-                <th>직무</th>
-            </tr>
-            <tbody>
-                <tr>
-                    <td>SRC 재활병원</td>
-                    <td>2024. 02 ~ 2026. 02</td>
-                    <td>작업치료사 </td>
-                </tr>
-                <tr>
-                    <td> 헬스케어 데이터 기반 인공지능 디지털 의료 웹 서비스 개발자 양성과정</td>
-                    <td>2026. 04 ~ 2026. 09</td>
-                    <td>수강중</td>
-                </tr>
+                    <a href="https://github.com/qlctoa" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        qlctoa's Github
+                    </a>
+                </div>
+            </div>
 
-            </tbody></thead><table><hr>
-    
-    <h1> Send Cover Letter</h1>
-    <p>담당자 이메일 : <input type="email" placeholder="example@company.com">
-    회사명 : <input type="text" placeholder="회사명">
-    <button type="submit">보내기</button> </p>
+            <img id="profile" src="/html:css/day01/IMG_5225.jpeg" alt="박빛샘 프로필 사진">
+        </section>
 
+        <hr>
 
+        <section >
+            <h2>Introduce</h2>
+            <p>
+                작업치료사로 근무하며 사람마다 필요한 도움과 경험이 다르다는 것을 배웠습니다.
+                현재는 헬스케어 AI 웹서비스 개발 과정을 수강하며, 의료 데이터를 분석하고
+                AI를 실제 서비스로 구현하는 프로젝트를 진행하고 있습니다.
+                사람을 이해했던 경험을 바탕으로, 누구나 쉽고 편하게 사용할 수 있는
+                웹 서비스를 만드는 프론트엔드 개발자로 성장해 나가고 있습니다.
+            </p>
+        </section>
 
+        <section>
+            <h2>Skills</h2>
 
+            <h4>LANGUAGE</h4>
+            <div class="skillbox">
+                <span>Python</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </section>
 
+        <section>
+            <h2>Experience</h2>
 
-    <footer>Copyright &#169; 박빛샘</footer>
-    </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>SRC 재활 병원</h3>
+                    <span>2024.02 ~ 2026.02</span>
+                </div>
 
+                <p id="job"><strong>작업치료사</strong>   |  사원</p>
 
+                <div class="work-detail">
+                    <p><strong>호흡기 재활 병동 입원환자 대상 작업치료 수행</strong></p>
+                    <ul>
+                        <li>뇌손상: 뇌졸중, 외상성 뇌손상 등</li>
+                        <li>척수손상: 경수 손상(C-level) 중심</li>
+                        <li>호흡기 질환: 만성폐쇄성폐질환(COPD), 폐렴 등</li>
+                        <li>동반 질환 및 인지 저하: 치매, 섬망, 기억력 저하 등</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <span>2020.03 ~ 2024.02</span>
+                <strong>우송대학교 작업치료학과</strong>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send Cover Letter</h2>
+
+            <form class="cover-form">
+                <input type="email" placeholder="담당자 이메일">
+                <input type="text" placeholder="회사명">
+                <button type="submit">보내기</button>
+            </form>
+        </section>
+
+        <footer>
+            Copyright &#169; 박빛샘
+        </footer>
+    </main>
 </body>
 </html>
