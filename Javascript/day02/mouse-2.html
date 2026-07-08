@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>마우스를 올려보세요.</p>
+
+    <script>
+        const p = document.querySelector("p")
+
+        function colorText(color) {
+            p.style.color = color
+        }
+        
+        // function orangeText(){
+        //     colorText("orange")
+        // }
+        
+        // function blackText(){
+        //     colorText("black")
+        // }
+        
+        // p.addEventListener("mouseover", orangeText)
+        // p.addEventListener("mouseout", blackText)
+        //                     //  (이벤트, 함수)
+        p.addEventListener("mouseover", ()=> colorText("orange"))
+        p.addEventListener("mouseout", ()=> colorText("black"))
+                            //  (이벤트, 함수)
+    </script>
+
+</body>
+</html>

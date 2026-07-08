@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+
+<body>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>cherry</li>
+    </ul>
+<!--
+document.querySelector("li")
+<li>​::marker​"apple"</li>​
+
+document.querySelectorAll("li")
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+
+document.querySelectorAll("li")[0]
+<li>​::marker​"apple"</li>​
+
+document.querySelectorAll("li")[1]
+<li>​::marker​"banana"</li>​
+
+document.querySelectorAll("li")[2]
+<li>​::marker​"cherry"</li>
+​-->
+
+<!-- 화면상 내용 추가 
+let newItem = document.createElement("li")
+undefined
+newItem.textContent = "melon"
+'melon'
+let parent = document.querySelector("li")
+undefined
+parent.appendChild(newItem)
+<li>​…​</li>​ -->
+
+
+    <!-- <h1 id="msg" class="hello"></h1>
+    <script>
+        let h1 = document.getElementById("msg");
+        
+        //  서버에서 사용자 이름을 불러옴
+        let username = "신동현" ;
+        h1.textContent = '안녕하세요, ${username}님' ;
+
+    </script> -->
+</body>
+</html>
+//함수를 변수처럼 사용할 수 있다
+//- 함수를 다른 함수에 전달할 수 있다
+//- 함수를 선언하는 부분과 실행하는 부분 달라질 수 있다. 
+ 
