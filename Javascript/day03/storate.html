@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strage</title>
+</head>
+
+<body>
+    
+    <input type="text" placeholder="이름 입력">
+    <button id="save">저장</button>
+    <button id="delete">삭제</button>
+    <p></p>
+
+
+    <script>
+        //저장 버튼을 누르면, input 태그에 입력한 값을 P태그 출력
+
+        const input = document.querySelector("input");
+        const savebutton = document.querySelector("#save");
+        const p = document.querySelector("p");
+        const deletebutton = document.querySelector("#delete");
+
+
+        function welcomeText(name){
+        return `안녕하세요, ${name}님`
+        }
+
+
+        const savedName = localStorage.getItem("name")
+        if (savedName) {
+            p.textContent = welcomeText(savedName)
+        }
+        
+
+
+        savebutton.addEventListener("click", ()=>{
+            //스토리지 저장
+            localStorage.setItem("name", input.value)
+            
+            //화면 출력
+            p.textContent = welcomeText(input.value);
+        })
+        
+        deletebutton.addEventListener("click", ()=>{
+            localStorage.removeItem("name")
+            p.textContent = "";
+        })
+    
+
+
+
+
+        </script>
+
+
+</body>
+
+</html>

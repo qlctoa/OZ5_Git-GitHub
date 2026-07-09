@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>마우스를 올려보세요.</p>
+
+    <script>
+        const p = document.querySelector("p")
+
+        function colorText(color) {
+            p.style.color = color
+        }
+        
+        //  1)adEventListener에 함수 정의     // 두번째 인자가 함수이면 돼
+        // p.addEventListener("mouseover", function highlightText(){
+        //     colorText("orange")
+        // })
+        // p.addEventListener("mouseout", function dehighlightText(){
+        //     colorText("black")
+        // })
+
+        // 2) 함수 이름 제거(익명함수)
+        // p.addEventListener("mouseover", function (){
+        //     colorText("orange")
+        // })
+        // p.addEventListener("mouseout", function (){
+        //     colorText("black")
+        // })
+
+        //3) function 대신 =>
+        // p.addEventListener("mouseover", ()=>{
+        //     colorText("orange")
+        // })
+        // p.addEventListener("mouseout", ()=>{
+        //     colorText("black")
+        // })
+
+        //4) 코드 한줄일 경우
+        p.addEventListener("mouseover", ()=> colorText("orange"))
+        p.addEventListener("mouseout", ()=>colorText("black"))
+    </script>
+
+</body>
+</html>
